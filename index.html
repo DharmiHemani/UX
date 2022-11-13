@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dharmi's Website!</title>
+    <link rel = 'stylesheet' href="style.css">
+  </head>
+  <body>
+    <div class = "main">
+      <nav>
+        <div class = "logo">
+          <img src = "logo.png">
+        </div>
+        <div class = "nav-links">
+          <ul>
+            <li><a href ="#one">Home</a></li>
+            <li><a href ="#two">Experience</a></li>
+            <li><a href ="#three">Projects</a></li>
+            <li><a href ="#four">Social</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class = "information">
+        <div class ="overlay"></div>
+        <img src ="dhar.png" class="career">
+        <div id= "circle">
+          <div class="feature one">
+            <img src = "abtme.png">
+            <div>
+              <h1>About Me:</h1>
+              <p>A grad student pursuing Business Intelligence & Analytics.</p>
+
+            </div>
+            
+          </div>
+          <div class="feature two">
+            <img src = "sskills.png">
+            <div>
+              <h1>Skills</h1>
+              <p>Business Intelligence an</p>
+
+            </div>
+          </div>
+          <div class="feature three">
+            <img src = "Graduate.png">
+            <div>
+              <h1>Degree</h1>
+              <p>MS Information Technology (Present)</p>
+              <p>BE Computer Engg</p>
+
+            </div>
+          </div>
+          <div class="feature four">
+            <img src = "contact.jpg">
+            <div>
+              <h1>Connect with me:</h1>
+              <a href="mailto:dharmihemani@gmail.com" class="mailcolor">dharmihemani@gmail.com</a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class ="controls">
+        <img src= "arr.png" id="Upbtn">
+        <h3>Highlights</h3>
+        <img src= "arro.png" id="dwnbtn">
+
+      </div>
+
+    </div>
+    <section>
+      <div class = "about" id="one">
+        <h1>About Me:</h1>
+        <p>Hello everyone!
+
+          I am Dharmi Hemani. I pursued Computer Science as my undergrad major and I graduated in 2021 with BE. Computer Science. Post my undergrad, I started working at Accenture as an Application Development Associate where I used technologies like UFT(automation tool), Python Selenium, SAP and a little bit of Java. Keeping the professional life aside, a little bit about me; I am a food enthusiast, I enjoy exploring new restaurants and new cuisines. Apart from that, I like to travel and cook.
+          
+          While I was working for Accenture, I was given a task to retrieve certain aspects of a dataset which I could use for automation. With my background in database management, I understood the technical terms of it but I wasn't able to implement those as per the client's requirement. That's when I decided to pursue Master's in Information Technology, so I could bridge the gap between the theoretical and practical aspects. I expect to gain  and learn various tools and concepts of database management and analytics with hands on exercises and projects.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class = "Experience" id="two">
+        <h1>Experience:</h1>
+        <p>Associate, Accenture</p>
+        <p>Digitization Consultant, WPI</p>
+      </div>
+    </section>
+
+    <section>
+      <div class = "Projects" id="three">
+        <h1>Projects:</h1>
+        <p>Amazon Consumer Analytics</p>
+        <p>Image Captioning</p>
+      </div>
+    </section>
+
+    <section>
+      <div class = "Social" id="four">
+        <h1>Social:</h1>
+        
+      </div>
+    </section>
+
+
+
+    <script>
+      var circle = document.getElementById("circle");
+      var Upbtn = document.getElementById("Upbtn");
+      var dwnbtn = document.getElementById("dwnbtn");
+
+      var rotateValue = circle.style.transform;
+      var rotateSum;
+
+      Upbtn.onclick =function() 
+      {
+        rotateSum = rotateValue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+      }
+
+      dwnbtn.onclick =function() 
+      {
+        rotateSum = rotateValue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotateValue = rotateSum;
+      }
+
+
+
+
+    </script>
+    <script type="test/javascript" src="test.js"></script>
+  </body>
+</html>
